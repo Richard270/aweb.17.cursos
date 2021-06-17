@@ -54,65 +54,77 @@
             <div class="col-6 offset-3">
                 <fieldset>
                     <legend>Formulario de registro</legend>
-                    <form action="" method="">
-                        <ul style="list-style: none;">
-                            <li>
-                                <label for="nombre">Nombre</label>
-                                <input type="text" name="nombre" id="nombre">
-                            </li>
-                            <li>
-                                <label for="primerApellido">Primer Apellido</label>
-                                <input type="text" name="primerApellido" id="primerApellido">
-                            </li>
-                            <li>
-                                <label for="segundoApellido">Segundo Apellido</label>
-                                <input type="text" name="segundoApellido" id="segundoApellido">
-                            </li>
-                            <li>
-                                <label for="#">Tipo de Modalidad</label>
+                    <form action="" method="POST">
 
-                                <input type="checkbox" id="presencial" name="modalidad" value="Presencial">
-                                <label for="presencial">Presencial</label>
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input class="form-control" type="text" name="nombre" id="nombre">
+                        </div>
+                        <div class="form-grop">
+                            <label for="primerApellido">Primer Apellido</label>
+                            <input class="form-control" type="text" name="primerApellido" id="primerApellido">
+                        </div>
+                        <div class="form-grop">
+                            <label for="segundoApellido">Segundo Apellido</label>
+                            <input class="form-control" type="text" name="segundoApellido" id="segundoApellido">
+                        </div>
+                        <div class="form-group">
+                            <label for="#">Tipo de Modalidad</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="presencial" name="modalidad"
+                                    value="Presencial">
+                                <label class="form-check-label" for="presencial">Presencial</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="mixto" name="modalidad"
+                                    value="Mixto">
+                                <label class="form-check-label" for="mixto">Remoto</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="mixto" name="modalidad"
+                                    value="Mixto">
+                                <label class="form-check-label" for="mixto">Mixto</label>
+                            </div>
+                        </div>
 
-                                <input type="checkbox" id="remoto" name="modalidad" value="Remoto">
-                                <label for="remoto">Remoto</label>
+                        <div class="form-group">
+                            <label class="form-check-label" for="#">Sexo</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sexo" id="hombre" value="hombre">
+                                <label class="form-check-label" for="hombre">Hombre</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sexo" id="mujer" value="mujer">
+                                <label class="form-check-label" for="mujer">Mujer</label>
+                            </div>
+                        </div>
 
-                                <input type="checkbox" id="mixto" name="modalidad" value="Mixto">
-                                <label for="mixto">Mixto</label>
-                            </li>
-                            <li>
-                                <label for="#">Sexo</label>
-                                <input type="radio" name="sexo" id="hombre" value="hombre">
-                                <label for="hombre">Hombre</label>
-                                <input type="radio" name="sexo" id="mujer" value="mujer">
-                                <label for="mujer">Mujer</label>
-                            </li>
-                            <li>
-                                <label for="curso">Curso</label>
-                                <select name="curso" id="curso">
-                                    <option value="0">Seleccione...</option>
+                        <div class="form-group">
+                            <label for="curso">Curso</label>
+                                <select class="form-control" name="curso" id="curso">
+                                    <option selected>Seleccione...</option>
                                     <option value="1">Creatividad y Diseño</option>
                                     <option value="2">DataBase System</option>
                                     <option value="3">Aplicaciones m&oacute;viles con Android</option>
                                     <option value="4">Finanzas Corporativas</option>
                                 </select>
-                            </li>
-                            <li>
-                                <label for="observaviones">Observaciones</label>
-                                <br>
-                                <textarea style="resize: none;" name="observaciones" id="observaciones" cols="60" rows="10">Ejemplo</textarea>
-                            </li>
-                            <li>
-                                <input type="submit" value="Registrar" name="registrar">
-                                <input type="reset" value="Cancelar" name="reset" id="rest">
-                            </li>
-                        </ul>
+                        </div>
+                        <div class="form-group">
+                            <label for="observaviones">Observaciones</label>
+                            <br>
+                            <textarea class="form-control" style="resize: none;" name="observaciones" id="observaciones" cols="60"
+                                rows="10">Ejemplo</textarea>
+                        </div>
+                        <div class="form-group">
+                            <input class="btn btn-primary" type="submit" value="Registrar" name="registrar">
+                            <input class="btn btn-danger" type="reset" value="Cancelar" name="reset" id="rest">
+                        </div>
                     </form>
                 </fieldset>
             </div>
         </div>
     </div>
-    
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
